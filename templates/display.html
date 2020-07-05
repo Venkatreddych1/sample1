@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display All Employees</title>
+</head>
+<body bgcolor="aqua">
+<table border="1">
+    <tr>
+       <th>EmployeeId</th>
+       <th>Employeename</th>
+       <th>employee_num</th>
+       <th>Department</th>
+    </tr>
+    {% for i in records %}
+    <tr>
+        <td>{{ i.empid }}</td>
+        <td>{{ i.name }}</td>
+        <td>{{ i.emp_num }}</td>
+        <td>{{ i.department }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
